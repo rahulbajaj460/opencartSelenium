@@ -1,0 +1,42 @@
+11:23:32.242 [main] DEBUG testCases.TC_002_LoginTest - capturing application debug logs....
+11:23:32.658 [main] INFO  testCases.TC_002_LoginTest - clicked on myaccount link on the home page..
+11:23:32.950 [main] INFO  testCases.TC_002_LoginTest - clicked on login link under myaccount..
+11:23:32.953 [main] INFO  testCases.TC_002_LoginTest - Entering valid email and password..
+11:23:33.648 [main] INFO  testCases.TC_002_LoginTest - clicked on ligin button..
+11:23:33.704 [main] INFO  testCases.TC_002_LoginTest - **** Finished TC_002_LoginTest  ****
+15:09:39.922 [main] INFO  testCases.TC_001_AccountRegistrationTest - **** starting TC_001_AccountRegistrationTest  *****
+15:09:39.926 [main] DEBUG testCases.TC_001_AccountRegistrationTest - application logs started......
+15:09:40.043 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on MyAccount link
+15:09:40.775 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on registration link
+15:09:40.775 [main] INFO  testCases.TC_001_AccountRegistrationTest - Entering customer details.. 
+15:09:42.302 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on continue..
+15:09:42.354 [main] INFO  testCases.TC_001_AccountRegistrationTest - Validating expected message..
+15:09:42.357 [main] DEBUG testCases.TC_001_AccountRegistrationTest - application logs end.......
+15:09:42.357 [main] INFO  testCases.TC_001_AccountRegistrationTest - **** finished TC_001_AccountRegistrationTest  *****
+15:09:45.576 [main] INFO  testCases.TC_002_LoginTest - **** Starting TC_002_LoginTest  ****
+15:09:45.576 [main] DEBUG testCases.TC_002_LoginTest - capturing application debug logs....
+15:09:45.866 [main] INFO  testCases.TC_002_LoginTest - clicked on myaccount link on the home page..
+15:09:46.236 [main] INFO  testCases.TC_002_LoginTest - clicked on login link under myaccount..
+15:09:46.237 [main] INFO  testCases.TC_002_LoginTest - Entering valid email and password..
+15:09:47.003 [main] INFO  testCases.TC_002_LoginTest - clicked on ligin button..
+15:09:47.107 [main] INFO  testCases.TC_002_LoginTest - **** Finished TC_002_LoginTest  ****
+15:11:16.496 [main] INFO  testCases.TC_001_AccountRegistrationTest - **** starting TC_001_AccountRegistrationTest  *****
+15:11:16.512 [main] DEBUG testCases.TC_001_AccountRegistrationTest - application logs started......
+15:11:16.622 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on MyAccount link
+15:11:17.179 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on registration link
+15:11:17.180 [main] INFO  testCases.TC_001_AccountRegistrationTest - Entering customer details.. 
+15:11:18.707 [main] INFO  testCases.TC_001_AccountRegistrationTest - clicked on continue..
+15:11:18.751 [main] INFO  testCases.TC_001_AccountRegistrationTest - Validating expected message..
+15:11:18.754 [main] DEBUG testCases.TC_001_AccountRegistrationTest - application logs end.......
+15:11:18.755 [main] INFO  testCases.TC_001_AccountRegistrationTest - **** finished TC_001_AccountRegistrationTest  *****
+15:11:22.929 [main] INFO  testCases.TC_002_LoginTest - **** Starting TC_002_LoginTest  ****
+15:11:22.929 [main] DEBUG testCases.TC_002_LoginTest - capturing application debug logs....
+15:11:23.014 [main] INFO  testCases.TC_002_LoginTest - clicked on myaccount link on the home page..
+15:11:23.322 [main] INFO  testCases.TC_002_LoginTest - clicked on login link under myaccount..
+15:11:23.324 [main] INFO  testCases.TC_002_LoginTest - Entering valid email and password..
+15:11:24.147 [main] INFO  testCases.TC_002_LoginTest - clicked on ligin button..
+15:11:24.207 [main] INFO  testCases.TC_002_LoginTest - **** Finished TC_002_LoginTest  ****
+15:11:29.612 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
+15:11:30.298 [main] INFO  testCases.TC_004_SearchProductTest -  Finished TC_004_SearchProductTest 
+15:11:33.118 [main] INFO  testCases.TC_005_AddToCartPageTest -  Starting TC_005_AddToCartPageTest 
+15:11:35.030 [main] INFO  testCases.TC_005_AddToCartPageTest -  Finished TC_004_SearchProductTest 
