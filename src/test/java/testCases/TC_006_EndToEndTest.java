@@ -16,10 +16,11 @@ import pageObjects.ShoppingCartPage;
 import testBase.BaseClass;
 
 public class TC_006_EndToEndTest extends BaseClass {
+	
 	@Test(groups= {"master"})
 	public void endToendTest() throws InterruptedException
 	{
-	//Soft assertions
+		//Soft assertions
 		SoftAssert myassert=new SoftAssert();
 		
 	//Account Registration
@@ -50,7 +51,6 @@ public class TC_006_EndToEndTest extends BaseClass {
 	MyAccountPage mc=new MyAccountPage(driver);
 	mc.clickLogout();
 	Thread.sleep(3000);
-	
 	
 	//Login
 	System.out.println("Login to application...............");

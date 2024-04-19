@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">opencart Functional Testing</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 12, 2024 07:40:55 pm</span></a>
+<a href="#"><span class="badge badge-primary">Apr 19, 2024 10:23:22 pm</span></a>
 </li>
 </ul>
 </div>
@@ -79,7 +79,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">sanity</a><a class="dropdown-item" href="#">master</a><a class="dropdown-item" href="#">regression</a>
+<a class="dropdown-item" href="#">master</a>
 </ul>
 </li>
 </ul>
@@ -87,12 +87,12 @@
       <ul class="test-list-item">
         <li class="test-item"  status="fail" test-id="1"
           author=""
-          tag="master regression"
+          tag="master"
           device="">
           <div class="test-detail">
-            <p class="name">testCases.TC_001_AccountRegistrationTest</p>
+            <p class="name">testCases.TC_006_EndToEndTest</p>
             <p class="text-sm">
-              <span>7:42:08 pm</span> / <span>00:00:00:213</span>
+              <span>10:23:45 pm</span> / <span>00:00:00:017</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -100,46 +100,41 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testCases.TC_001_AccountRegistrationTest</h5>
-<span class='badge badge-success'>04.12.2024 7:42:08 pm</span>
-<span class='badge badge-danger'>04.12.2024 7:42:08 pm</span>
-<span class='badge badge-default'>00:00:00:213</span>
+<h5 class="test-status text-fail">testCases.TC_006_EndToEndTest</h5>
+<span class='badge badge-success'>04.19.2024 10:23:45 pm</span>
+<span class='badge badge-danger'>04.19.2024 10:23:45 pm</span>
+<span class='badge badge-default'>00:00:00:017</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">master</span>
-<span class="badge badge-pill badge-default">regression</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">master</span></div>
 </div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\Automation Training\opencart\screenshots\verify_account_registration_20240412074208.png' src="D:\Automation Training\opencart\screenshots\verify_account_registration_20240412074208.png">
-    
-    </div></div>
-<div class="detail-body mt-4">
+</div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:42:08 pm</td>
+        <td>10:23:45 pm</td>
         <td>
-          verify_account_registration got failed
+          endToendTest got failed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:42:08 pm</td>
+        <td>10:23:45 pm</td>
         <td>
-          Account creation failed expected [Your Account Has Been Created!] but found [no such element: Unable to locate element: {"method":"xpath","selector":"//h1[normalize-space()='Your Account Has Been Created!']"}
-  (Session info: chrome=123.0.6312.106)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+          no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.124)
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b929d86a216d7f6a7aeabfaca8d7606c, findElement {using=xpath, value=//h1[normalize-space()='Your Account Has Been Created!']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\Balaji\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64777}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64777/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b929d86a216d7f6a7aeabfaca8d7606c]
+Command: [f21fee168a61037f7e6fb6be286219d6, findElement {using=xpath, value=//div[@id='cart']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.124, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\Balaji\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56231}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56231/devtoo..., se:cdpVersion: 123.0.6312.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f21fee168a61037f7e6fb6be286219d6
         </td>
       </tr>
   </tbody>
@@ -149,12 +144,12 @@ Session ID: b929d86a216d7f6a7aeabfaca8d7606c]
         </li>
         <li class="test-item"  status="fail" test-id="2"
           author=""
-          tag="master sanity"
+          tag="master"
           device="">
           <div class="test-detail">
-            <p class="name">testCases.TC_002_LoginTest</p>
+            <p class="name">testCases.TC_006_EndToEndTest</p>
             <p class="text-sm">
-              <span>7:42:57 pm</span> / <span>00:00:00:196</span>
+              <span>10:23:45 pm</span> / <span>00:00:00:001</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -162,38 +157,41 @@ Session ID: b929d86a216d7f6a7aeabfaca8d7606c]
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testCases.TC_002_LoginTest</h5>
-<span class='badge badge-success'>04.12.2024 7:42:57 pm</span>
-<span class='badge badge-danger'>04.12.2024 7:42:57 pm</span>
-<span class='badge badge-default'>00:00:00:196</span>
+<h5 class="test-status text-fail">testCases.TC_006_EndToEndTest</h5>
+<span class='badge badge-success'>04.19.2024 10:23:45 pm</span>
+<span class='badge badge-danger'>04.19.2024 10:23:45 pm</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">master</span>
-<span class="badge badge-pill badge-default">sanity</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">master</span></div>
 </div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\Automation Training\opencart\screenshots\verify_login_20240412074257.png' src="D:\Automation Training\opencart\screenshots\verify_login_20240412074257.png">
-    
-    </div></div>
-<div class="detail-body mt-4">
+</div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:42:57 pm</td>
+        <td>10:23:45 pm</td>
         <td>
-          verify_login got failed
+          endToendTest got failed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:42:57 pm</td>
+        <td>10:23:45 pm</td>
         <td>
-          Login failed expected [true] but found [false]
+          no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.124)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f21fee168a61037f7e6fb6be286219d6, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.124, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\Balaji\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56231}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56231/devtoo..., se:cdpVersion: 123.0.6312.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f21fee168a61037f7e6fb6be286219d6
         </td>
       </tr>
   </tbody>
@@ -214,43 +212,10 @@ Session ID: b929d86a216d7f6a7aeabfaca8d7606c]
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">sanity</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>sanity</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:42:57 pm</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>testCases.TC_002_LoginTest</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -275,49 +240,16 @@ Session ID: b929d86a216d7f6a7aeabfaca8d7606c]
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>19:42:08 pm</td>
+<td>22:23:45 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>testCases.TC_001_AccountRegistrationTest</a>
+<a href="#" class="linked" test-id='1' id='1'>testCases.TC_006_EndToEndTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>19:42:57 pm</td>
+<td>22:23:45 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>testCases.TC_002_LoginTest</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">regression</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>regression</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:42:08 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='1'>testCases.TC_001_AccountRegistrationTest</a>
+<a href="#" class="linked" test-id='2' id='2'>testCases.TC_006_EndToEndTest</a>
 </td>
 </tr>
 </tbody>
@@ -337,13 +269,13 @@ Session ID: b929d86a216d7f6a7aeabfaca8d7606c]
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 12, 2024 07:40:55 pm</h3>
+<h3>Apr 19, 2024 10:23:22 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 12, 2024 07:42:57 pm</h3>
+<h3>Apr 19, 2024 10:23:45 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -413,7 +345,7 @@ Session ID: b929d86a216d7f6a7aeabfaca8d7606c]
 </div></div>
 <script>
 var timeline = {
-"testCases.TC_001_AccountRegistrationTest":0.213,"testCases.TC_002_LoginTest":0.196
+"testCases.TC_006_EndToEndTest":0.017,"testCases.TC_006_EndToEndTest":0.001
 };
 </script>
 <div class="row">
@@ -423,25 +355,9 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>sanity</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0%</td>
-</tr>
-<tr>
 <td>master</td>
 <td>0</td>
 <td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>regression</td>
-<td>0</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0%</td>
@@ -478,7 +394,7 @@ var timeline = {
 </tr>
 <tr>
 <td>Operating System</td>
-<td>Windows</td>
+<td>windows</td>
 </tr>
 <tr>
 <td>Browser</td>
@@ -486,7 +402,7 @@ var timeline = {
 </tr>
 <tr>
 <td>Groups</td>
-<td>[sanity, regression]</td>
+<td>[master]</td>
 </tr>
 </tbody>
 </table></div>
