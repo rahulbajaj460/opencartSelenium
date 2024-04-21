@@ -7,9 +7,24 @@ import java.io.IOException;
 
 //Extent report 5.x...//version
 
+
+//For email
+import javax.mail.Authenticator;
+import javax.mail.Message;
+import javax.mail.Multipart;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
+
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -100,6 +115,7 @@ public class ExtentReportManager implements ITestListener {
 		
 		extent.flush();
 		
+		//To open report on desktop..
 		String pathOfExtentReport = System.getProperty("user.dir")+"\\reports\\"+repName;
 		File extentReport = new File(pathOfExtentReport);
 		
@@ -109,26 +125,71 @@ public class ExtentReportManager implements ITestListener {
 			e.printStackTrace();
 		}
 
-		/*
-		 * try { URL url = new
-		 * URL("file:///"+System.getProperty("user.dir")+"\\reports\\"+repName);
-		 * 
-		 * // Create the email message 
-		 * ImageHtmlEmail email = new ImageHtmlEmail();
-		 * email.setDataSourceResolver(new DataSourceUrlResolver(url));
-		 * email.setHostName("smtp.googlemail.com"); 
-		 * email.setSmtpPort(465);
-		 * email.setAuthenticator(new DefaultAuthenticator("pavanoltraining@gmail.com","password")); 
-		 * email.setSSLOnConnect(true);
-		 * email.setFrom("pavanoltraining@gmail.com"); //Sender
-		 * email.setSubject("Test Results");
-		 * email.setMsg("Please find Attached Report....");
-		 * email.addTo("pavankumar.busyqa@gmail.com"); //Receiver 
-		 * email.attach(url, "extent report", "please check report..."); 
-		 * email.send(); // send the email 
-		 * }
-		 * catch(Exception e) { e.printStackTrace(); }
-		 */
+		//To send email with attachment
+		//sendEmail(sender email,sender password(encrypted),recipient email);
+		//sendEmail("abc@gmail.com","xyz123xyz","xyz@gmail.com");
+	}
+	
+	
+	//User defined method for sending email..
+	public void sendEmail(String senderEmail,String senderPassword,String recipientEmail)
+	{
+		// SMTP server properties
+        Properties properties = new Properties();
+        properties.put("mail.smtp.auth", "true");
+        properties.put("mail.smtp.starttls.enable", "true");
+        properties.put("mail.smtp.host", "smtp.gmail.com");
+        properties.put("mail.smtp.port", "587");
+
+        // Create a Session object
+        Session session = Session.getInstance(properties, new Authenticator() {
+           protected PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication(senderEmail, senderPassword);
+            }
+        });
+
+        try {
+            // Create a MimeMessage object
+            Message message = new MimeMessage(session);
+
+            // Set the sender and recipient addresses
+            message.setFrom(new InternetAddress(senderEmail));
+            message.setRecipient(Message.RecipientType.TO, new InternetAddress(recipientEmail));
+
+            // Set the subject
+            message.setSubject("Test Report with attachment");
+
+            // Create a MimeMultipart object
+            Multipart multipart = new MimeMultipart();
+
+            // Attach the file
+            String filePath = ".\\reports\\"+repName;
+            String fileName = repName;
+
+            MimeBodyPart attachmentPart = new MimeBodyPart();
+            attachmentPart.attachFile(filePath);
+            attachmentPart.setFileName(fileName);
+
+            // Create a MimeBodyPart for the text content
+            MimeBodyPart textPart = new MimeBodyPart();
+            textPart.setText("Please find the attached file.");
+
+            // Add the parts to the multipart
+            multipart.addBodyPart(textPart);
+            multipart.addBodyPart(attachmentPart);
+
+            // Set the content of the message
+            message.setContent(multipart);
+
+            // Send the message
+            Transport.send(message);
+
+            System.out.println("Email sent successfully!");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+            
 	}
 
 }
